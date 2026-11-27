@@ -1,16 +1,53 @@
 # 飞牛套件（fnOS FPK 汇总）
 
-飞牛 fnOS（飞牛私有云）第三方 FPK 侧载安装包合集，**376 个文件 / 194 个应用 / 6.04 GB**。
+飞牛 fnOS 第三方 FPK 侧载安装包合集，两个来源、两个 Release：
 
-## 下载
+| Release | 内容 | 数量 |
+| --- | --- | --- |
+| [rrog-2026.10.09-1908](https://github.com/nanxi9899/feiniu-suite/releases/tag/rrog-2026.10.09-1908) | **RROrg/fn-apps** 官方编译套件（最新发布 2026.10.09-1908，all 架构通用），另含自打包 WordPress 7.1.5 | 31 + 1 |
+| [fnos-2026.11.27](https://github.com/nanxi9899/feiniu-suite/releases/tag/fnos-2026.11.27) | **conversun/fnos-apps** 每应用最新版快照（x86 + arm） | 375 |
 
-全部安装包在 [Releases · fnos-2026.11.27](https://github.com/nanxi9899/feiniu-suite/releases/tag/fnos-2026.11.27) 里。
+均为未签名包，安装前需在 fnOS 应用中心打开「允许安装第三方应用」。
 
-- 来源：上游 [conversun/fnos-apps](https://github.com/conversun/fnos-apps) 中每个应用的**最新版** FPK（x86 与 arm 双架构）
-- 另含自打包 **WordPress 7.1.5**（x86_64，内置静态 PHP 8.5.8 + SQLite 集成插件，无需额外数据库）
-- 均为未签名包，安装前需在 fnOS 应用中心打开「允许安装第三方应用」
+## RROrg 官方套件（31 个）
 
-## 应用清单
+| 应用 | 版本 | 下载 | 体积 |
+| --- | --- | --- | --- |
+| `fn-VirtualHereServer_all_v4.8.8-1` | 4.8.8-1.fpk | [下载](https://github.com/RROrg/fn-apps/releases/download/2026.10.09-1908/fn-VirtualHereServer_all_v4.8.8-1.fpk) | 3.2MB |
+| `fn-WParted_all_v1.0.2` | 1.0.2.fpk | [下载](https://github.com/RROrg/fn-apps/releases/download/2026.10.09-1908/fn-WParted_all_v1.0.2.fpk) | 0.1MB |
+| `fn-advancedsettings_all_v1.1.1` | 1.1.1.fpk | [下载](https://github.com/RROrg/fn-apps/releases/download/2026.10.09-1908/fn-advancedsettings_all_v1.1.1.fpk) | 0.3MB |
+| `fn-appdownload_all_v1.1.5` | 1.1.5.fpk | [下载](https://github.com/RROrg/fn-apps/releases/download/2026.10.09-1908/fn-appdownload_all_v1.1.5.fpk) | 0.3MB |
+| `fn-appsettings_all_v1.0.8` | 1.0.8.fpk | [下载](https://github.com/RROrg/fn-apps/releases/download/2026.10.09-1908/fn-appsettings_all_v1.0.8.fpk) | 0.1MB |
+| `fn-audioplayer_all_v1.1.0` | 1.1.0.fpk | [下载](https://github.com/RROrg/fn-apps/releases/download/2026.10.09-1908/fn-audioplayer_all_v1.1.0.fpk) | 0.1MB |
+| `fn-bluetooth_all_v1.1.0` | 1.1.0.fpk | [下载](https://github.com/RROrg/fn-apps/releases/download/2026.10.09-1908/fn-bluetooth_all_v1.1.0.fpk) | 0.1MB |
+| `fn-chromium-desktop_all_v1.0.4` | 1.0.4.fpk | [下载](https://github.com/RROrg/fn-apps/releases/download/2026.10.09-1908/fn-chromium-desktop_all_v1.0.4.fpk) | 0.0MB |
+| `fn-chromium_all_v1.0.4` | 1.0.4.fpk | [下载](https://github.com/RROrg/fn-apps/releases/download/2026.10.09-1908/fn-chromium_all_v1.0.4.fpk) | 0.0MB |
+| `fn-codeserver_all_v1.1.1` | 1.1.1.fpk | [下载](https://github.com/RROrg/fn-apps/releases/download/2026.10.09-1908/fn-codeserver_all_v1.1.1.fpk) | 0.0MB |
+| `fn-execute_all_v1.0.4` | 1.0.4.fpk | [下载](https://github.com/RROrg/fn-apps/releases/download/2026.10.09-1908/fn-execute_all_v1.0.4.fpk) | 0.0MB |
+| `fn-fail2ban_all_v1.0.6` | 1.0.6.fpk | [下载](https://github.com/RROrg/fn-apps/releases/download/2026.10.09-1908/fn-fail2ban_all_v1.0.6.fpk) | 0.2MB |
+| `fn-grafana-alloy_all_v1.20.1` | 1.20.1.fpk | [下载](https://github.com/RROrg/fn-apps/releases/download/2026.10.09-1908/fn-grafana-alloy_all_v1.20.1.fpk) | 295.5MB |
+| `fn-guacamole_all_v1.6.0-1` | 1.6.0-1.fpk | [下载](https://github.com/RROrg/fn-apps/releases/download/2026.10.09-1908/fn-guacamole_all_v1.6.0-1.fpk) | 0.1MB |
+| `fn-iVentoy_all_v1.0.44` | 1.0.44.fpk | [下载](https://github.com/RROrg/fn-apps/releases/download/2026.10.09-1908/fn-iVentoy_all_v1.0.44.fpk) | 46.2MB |
+| `fn-influxdb_all_v2.9.1` | 2.9.1.fpk | [下载](https://github.com/RROrg/fn-apps/releases/download/2026.10.09-1908/fn-influxdb_all_v2.9.1.fpk) | 0.0MB |
+| `fn-installer_all_v1.0.6` | 1.0.6.fpk | [下载](https://github.com/RROrg/fn-apps/releases/download/2026.10.09-1908/fn-installer_all_v1.0.6.fpk) | 0.0MB |
+| `fn-kodi_all_v1.0.8` | 1.0.8.fpk | [下载](https://github.com/RROrg/fn-apps/releases/download/2026.10.09-1908/fn-kodi_all_v1.0.8.fpk) | 0.0MB |
+| `fn-linux-station_all_v1.0.2` | 1.0.2.fpk | [下载](https://github.com/RROrg/fn-apps/releases/download/2026.10.09-1908/fn-linux-station_all_v1.0.2.fpk) | 0.2MB |
+| `fn-open-vm-tools_all_v1.1.1` | 1.1.1.fpk | [下载](https://github.com/RROrg/fn-apps/releases/download/2026.10.09-1908/fn-open-vm-tools_all_v1.1.1.fpk) | 0.1MB |
+| `fn-p2s_all_v1.0.5` | 1.0.5.fpk | [下载](https://github.com/RROrg/fn-apps/releases/download/2026.10.09-1908/fn-p2s_all_v1.0.5.fpk) | 0.1MB |
+| `fn-qemu-ga_all_v1.1.1` | 1.1.1.fpk | [下载](https://github.com/RROrg/fn-apps/releases/download/2026.10.09-1908/fn-qemu-ga_all_v1.1.1.fpk) | 0.1MB |
+| `fn-scheduler_all_v1.3.3` | 1.3.3.fpk | [下载](https://github.com/RROrg/fn-apps/releases/download/2026.10.09-1908/fn-scheduler_all_v1.3.3.fpk) | 0.2MB |
+| `fn-scrutiny_all_v1.76.4` | 1.76.4.fpk | [下载](https://github.com/RROrg/fn-apps/releases/download/2026.10.09-1908/fn-scrutiny_all_v1.76.4.fpk) | 84.4MB |
+| `fn-speedtest_all_v1.0.1` | 1.0.1.fpk | [下载](https://github.com/RROrg/fn-apps/releases/download/2026.10.09-1908/fn-speedtest_all_v1.0.1.fpk) | 0.0MB |
+| `fn-terminal_all_v1.1.2` | 1.1.2.fpk | [下载](https://github.com/RROrg/fn-apps/releases/download/2026.10.09-1908/fn-terminal_all_v1.1.2.fpk) | 6.8MB |
+| `fn-vFygoOS_all_v1.0.4` | 1.0.4.fpk | [下载](https://github.com/RROrg/fn-apps/releases/download/2026.10.09-1908/fn-vFygoOS_all_v1.0.4.fpk) | 0.0MB |
+| `fn-vfnOS_all_v1.0.4` | 1.0.4.fpk | [下载](https://github.com/RROrg/fn-apps/releases/download/2026.10.09-1908/fn-vfnOS_all_v1.0.4.fpk) | 0.0MB |
+| `fn-vgmng_all_v1.0.5` | 1.0.5.fpk | [下载](https://github.com/RROrg/fn-apps/releases/download/2026.10.09-1908/fn-vgmng_all_v1.0.5.fpk) | 0.3MB |
+| `fn-wifi-hotspot_all_v1.1.9` | 1.1.9.fpk | [下载](https://github.com/RROrg/fn-apps/releases/download/2026.10.09-1908/fn-wifi-hotspot_all_v1.1.9.fpk) | 0.1MB |
+| `fn-zerotier_all_v1.0.9` | 1.0.9.fpk | [下载](https://github.com/RROrg/fn-apps/releases/download/2026.10.09-1908/fn-zerotier_all_v1.0.9.fpk) | 0.1MB |
+
+## conversun 快照（194 个应用 / 6.04 GB）
+
+含自打包 **WordPress 7.1.5**（x86_64，内置静态 PHP 8.5.8 + SQLite 集成插件，无需额外数据库）。
 
 | 应用 | 版本 | 下载 | 体积 |
 | --- | --- | --- | --- |
@@ -208,8 +245,3 @@
 | `zeroclaw` | 0.9.0 | [arm](https://github.com/nanxi9899/feiniu-suite/releases/download/fnos-2026.11.27/zeroclaw_0.9.0_arm.fpk) · [x86](https://github.com/nanxi9899/feiniu-suite/releases/download/fnos-2026.11.27/zeroclaw_0.9.0_x86.fpk) | arm 27MB / x86 29MB |
 | `zerotier` | 0.8.8 | [arm](https://github.com/nanxi9899/feiniu-suite/releases/download/fnos-2026.11.27/zerotier_0.8.8_arm.fpk) · [x86](https://github.com/nanxi9899/feiniu-suite/releases/download/fnos-2026.11.27/zerotier_0.8.8_x86.fpk) | arm 0MB / x86 0MB |
 | `zonefoundry-bridge` | 0.3.52 | [arm](https://github.com/nanxi9899/feiniu-suite/releases/download/fnos-2026.11.27/zonefoundry-bridge_0.3.52_arm.fpk) · [x86](https://github.com/nanxi9899/feiniu-suite/releases/download/fnos-2026.11.27/zonefoundry-bridge_0.3.52_x86.fpk) | arm 0MB / x86 0MB |
-
-## 说明
-
-- 上游每日自动同步，本仓库为某一时点的快照（2026-11-27）。
-- 文件名格式：`<应用>_<版本>_<架构>.fpk`，x86 对应 Intel/AMD，arm 对应 ARM64 机型。
